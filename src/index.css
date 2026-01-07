@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Patrick+Hand&display=swap');
+
+@layer base {
+  :root {
+    /* Hand-Drawn Palette (Light Mode) */
+    /* Background: #fdfbf7 (Warm Paper) -> 43 33% 98% */
+    --background: 43 33% 98%;
+    
+    /* Foreground: #2d2d2d (Soft Pencil Black) -> 0 0% 18% */
+    --foreground: 0 0% 18%;
+
+    /* Card: #ffffff -> 0 0% 100% */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+
+    /* Primary: #2d2d2d (Same as foreground for text, but can be used for solid buttons) */
+    --primary: 0 0% 18%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 0 0% 85%; /* Legacy, maybe unused */
+
+    /* Secondary: #2d5da1 (Blue Ballpoint Pen) -> 215 56% 40% */
+    --secondary: 215 56% 40%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Muted: #e5e0d8 (Old Paper/Erased) -> 43 17% 87% */
+    --muted: 43 17% 87%;
+    --muted-foreground: 0 0% 40%; /* Slightly lighter pencil */
+
+    /* Accent: #ff4d4d (Red Correction Marker) -> 0 100% 65% */
+    --accent: 0 100% 65%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border: #2d2d2d (Pencil Lead) -> 0 0% 18% */
+    --border: 0 0% 18%;
+    
+    --input: 0 0% 18%;
+    --ring: 215 56% 40%; /* Blue ring */
+
+    /* Custom Tokens */
+    --radius: 0.5rem; /* Base radius, though we use wobbly mostly */
+  }
+
+  .dark {
+    /* Dark mode not primary focus of Hand-Drawn style, but keeping valid values */
+    --background: 0 0% 18%;
+    --foreground: 43 33% 98%;
+    --card: 0 0% 18%;
+    --card-foreground: 43 33% 98%;
+    --popover: 0 0% 18%;
+    --popover-foreground: 43 33% 98%;
+    --primary: 43 33% 98%;
+    --primary-foreground: 0 0% 18%;
+    --secondary: 215 56% 40%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 25%;
+    --muted-foreground: 43 17% 70%;
+    --accent: 0 100% 65%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 43 17% 30%;
+    --input: 43 17% 30%;
+    --ring: 215 56% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-hand;
+    background-image: radial-gradient(#e5e0d8 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-marker;
+  }
+}

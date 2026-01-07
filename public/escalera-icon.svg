@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Simple stair steps icon representing Escalera (stairs in Spanish) -->
+  <rect x="4" y="22" width="8" height="6" fill="#2d5da1"/>
+  <rect x="12" y="14" width="8" height="14" fill="#2d5da1"/>
+  <rect x="20" y="6" width="8" height="22" fill="#2d5da1"/>
+</svg>
