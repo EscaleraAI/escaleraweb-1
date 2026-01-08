@@ -32,17 +32,16 @@ export default function Hero() {
 
       <div className="relative z-10 space-y-8">
         <h1 className="text-5xl md:text-7xl font-bold font-marker leading-tight text-foreground">
-          Level Up Your Team via <br />
+          Architecting growth, <br />
           <span className="relative inline-block text-secondary">
-            Education & Content
+            wherever you are.
             {/* Scribble underline - like a marker highlight */}
             <ScribbleUnderline className="absolute -bottom-2 left-0 w-full h-3 text-accent/40" />
           </span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-xl md:text-2xl font-hand text-muted-foreground leading-relaxed">
-          Escalera Labs helps you scale by building educational product ecosystems.
-          We turn "corporate" into "community" with authentic content and strategies that stick.
+          From building our own platforms to scaling yours, we bridge the gap between information and action with systems that live wherever life happens.
         </p>
 
         <div className="relative inline-flex flex-col sm:flex-row gap-6 mt-4 items-center">
